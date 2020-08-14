@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=Overtime
+comment1.params=
+comment1.target=Staff()
+comment2.params=
+comment2.target=void\ input()
+comment3.params=
+comment3.target=void\ printdetails()
+comment4.params=n\ r\ h
+comment4.target=Overtime(int,\ double,\ int)
+comment5.params=
+comment5.target=double\ calculate()
+comment6.params=
+comment6.target=void\ show_salary()
+comment7.params=agrs
+comment7.target=void\ main(java.lang.String[])
+numComments=8

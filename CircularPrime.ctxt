@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=CircularPrime
+comment1.params=X\ Y
+comment1.target=CircularPrime(int,\ int)
+comment2.params=num
+comment2.target=boolean\ isPrime(int)
+comment3.params=n
+comment3.target=int\ rotate(int)
+comment4.params=
+comment4.target=void\ printall()
+comment5.params=agrs
+comment5.target=void\ main(java.lang.String[])
+numComments=6

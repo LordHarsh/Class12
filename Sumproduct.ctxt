@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Sumproduct
+comment1.params=a
+comment1.target=Sumproduct(int)
+comment2.params=num
+comment2.target=int\ digitsum(int)
+comment3.params=num
+comment3.target=int\ digitpro(int)
+comment4.params=
+comment4.target=void\ display()
+comment5.params=agrs
+comment5.target=void\ main(java.lang.String[])
+numComments=6

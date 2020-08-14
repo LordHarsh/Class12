@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.target=revstr
+comment1.params=
+comment1.target=revstr()
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ jask\r\n
+comment2.params=
+comment2.target=void\ getstr()
+comment3.params=i
+comment3.target=void\ rec(int)
+comment4.params=
+comment4.target=void\ check()
+comment5.params=agrs
+comment5.target=void\ main(java.lang.String[])
+numComments=6

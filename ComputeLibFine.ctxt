@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=ComputeLibFine
+comment1.params=nn\ aa\ pp
+comment1.target=Library(java.lang.String,\ java.lang.String,\ double)
+comment2.params=
+comment2.target=void\ show()
+comment3.params=dd\ nn\ aa\ pp
+comment3.target=ComputeLibFine(int,\ java.lang.String,\ java.lang.String,\ double)
+comment4.params=
+comment4.target=void\ fine()
+comment5.params=
+comment5.target=void\ display()
+comment6.params=agrs
+comment6.target=void\ main(java.lang.String[])
+numComments=7

@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=ConvertDigitLetters
+comment1.params=num
+comment1.target=java.lang.String\ ones(int)
+comment2.params=num
+comment2.target=java.lang.String\ elevens(int)
+comment3.params=num
+comment3.target=java.lang.String\ thousands(int)
+comment4.params=num
+comment4.target=java.lang.String\ hundreds(int)
+comment5.params=num
+comment5.target=java.lang.String\ tens(int)
+comment6.params=agrs
+comment6.target=void\ main(java.lang.String[])
+numComments=7

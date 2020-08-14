@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Happy
+comment1.params=
+comment1.target=Happy()
+comment2.params=nn
+comment2.target=void\ getnum(int)
+comment3.params=x
+comment3.target=int\ sum_sq_digits(int)
+comment4.params=
+comment4.target=void\ isHappy()
+comment5.params=agrs
+comment5.target=void\ main(java.lang.String[])
+numComments=6

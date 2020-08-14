@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=bestfourObject
+comment1.params=
+comment1.target=void\ Iscscores()
+comment2.params=x
+comment2.target=int\ point(int)
+comment3.params=
+comment3.target=void\ bestfour()
+comment4.params=agrs
+comment4.target=void\ main(java.lang.String[])
+numComments=5

@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=Hifact
+comment1.params=
+comment1.target=Hifact()
+comment2.params=
+comment2.target=void\ getdata()
+comment3.params=x\ y
+comment3.target=int\ rechcf(int,\ int)
+comment4.params=a\ b\ hcf
+comment4.target=int\ fn_lcm(int,\ int,\ int)
+comment5.params=
+comment5.target=void\ result()
+comment6.params=agrs
+comment6.target=void\ main(java.lang.String[])
+numComments=7

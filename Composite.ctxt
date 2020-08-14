@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Composite
+comment1.params=mm\ nn
+comment1.target=Composite(int,\ int)
+comment2.params=p
+comment2.target=int\ isComposite(int)
+comment3.params=
+comment3.target=void\ fill()
+comment4.params=
+comment4.target=void\ display()
+comment5.params=agrs
+comment5.target=void\ main(java.lang.String[])
+numComments=6

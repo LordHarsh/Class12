@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Number
+comment1.params=
+comment1.target=Number()
+comment2.params=n
+comment2.target=Number(int)
+comment3.params=
+comment3.target=void\ digitfrequency()
+comment4.params=
+comment4.target=int\ sumdigits()
+comment5.params=agrs
+comment5.target=void\ main(java.lang.String[])
+numComments=6

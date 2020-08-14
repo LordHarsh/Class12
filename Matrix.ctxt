@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Matrix
+comment1.params=
+comment1.target=void\ fillarray()
+comment2.params=
+comment2.target=int\ maxarray()
+comment3.params=
+comment3.target=void\ replace()
+comment4.params=
+comment4.target=void\ display()
+comment5.params=agrs
+comment5.target=void\ main(java.lang.String[])
+numComments=6
