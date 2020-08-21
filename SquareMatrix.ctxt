@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=SquareMatrix
+comment1.params=S
+comment1.target=SquareMatrix(int)
+comment2.params=
+comment2.target=void\ createMat()
+comment3.params=v\ s2
+comment3.target=void\ createMat2(int,\ int)
+comment4.params=
+comment4.target=void\ display()
+comment5.params=agrs
+comment5.target=void\ main(java.lang.String[])
+numComments=6
