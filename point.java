@@ -46,4 +46,15 @@ class point {
                 System.out.printf("Row %d is not Pseudo",(i+1));
         }
     }
+
+    public static void main(String agrs[]) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter size");
+        int s1=sc.nextInt();
+        int s2=sc.nextInt();
+        point obj=new point(s1,s2);
+        obj.get_array();
+        obj.display_mat();
+        obj.result();
+    }
 }
