@@ -4,6 +4,7 @@ class SaddlePoint {
     int arr[][], rowSize, colSize, rowIndex, colIndex;
     void get_array()
     {
+        arr=new int[rowSize][colSize];
         Scanner sc=new Scanner(System.in);
         for(int i=0; i<rowSize; i++)
             for(int j=0; j<colSize; j++)
@@ -27,26 +28,24 @@ class SaddlePoint {
         int count=0;
         for(int i=0; i<arr.length; i++) {
             rowIndex=i;
+            colIndex=0;
             for(int j=0; j<arr[i].length; j++) {
-                colIndex=j;
-                for(int k=j+1; k<arr[i].length; k++) {
-                    if(arr[i][colIndex]>arr[i][j])
-                        colIndex=j;
-                    System.out.println(arr[rowIndex][colIndex]);
-                }
+                if(arr[i][j]<arr[i][colIndex])
+                    colIndex=j;
             }
             boolean flag=true;
-            for(int j=0; j<arr.length; j++) {
-                if(arr[rowIndex][colIndex]<arr[j][colIndex])
+            for(int k=0; k<arr.length; k++) {
+                if(arr[rowIndex][colIndex]<arr[k][colIndex])
                     flag=false;
-                System.out.println(arr[rowIndex][colIndex]);
             }
+            
             if(flag) {
-                System.out.println(arr[rowIndex][colIndex]);
+                System.out.printf("Saddle point is %d (row=%d and column=%d)"
+                ,arr[rowIndex][colIndex], rowIndex, colIndex);
                 count++;
             }
         }
-        if(count==0) 
+        if(count==0)
             System.out.println("No Saddle Point");
     }
 
