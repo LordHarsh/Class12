@@ -46,7 +46,8 @@ class MatrixRowColumn
                 }
             }
         }
-        System.out.println("Largest Number: "+A[maxrow][maxcol]+"\nRow: "+maxrow+"\n Column "+maxcol);
+        System.out.printf("Largest Number: %d\nRow: %d\nColumn: %d\n"
+        ,A[maxrow][maxcol],maxrow,maxcol);
     }
 
     void min()
@@ -64,7 +65,8 @@ class MatrixRowColumn
                 }
             }
         }
-        System.out.println("Smallest Number: "+A[minrow][mincol]+"\nRow: "+minrow+"\nColumn "+mincol);
+        System.out.printf("Smallest Number: %d\nRow: %d\nColumn: %d\n"
+        ,A[minrow][mincol],minrow,mincol);
     }
 
     void sort()
