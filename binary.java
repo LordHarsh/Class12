@@ -17,12 +17,12 @@ class Binary{
     
     int check(String s){
         for(int i=0; i<s.length(); i++)
-            if(!(s.charAt(i)=='0' || s.charAt(i)=='1'))
+            if(!(s.charAt(i)=='0' || s.charAt(i)=='1' || s.charAt(i)=='.'))
                 return 0;
          return 1;
     }
     
-    String bin_to_dec(String h){
+    String bin_to_dec(String h){        //converting binary
         int decimal=h.indexOf('.');
         int len=h.length();
         double sum=0;
@@ -39,19 +39,24 @@ class Binary{
         int decimal=h.indexOf('.');
         int len=h.length();
         int left=Integer.parseInt(h.substring(0,decimal));
-        int rignt=Integer.parseInt(h.substring(0,decimal));
+        double right=Integer.parseInt(h.substring(decimal+1,len))/Math.pow(10, len-decimal);
         String str="";
         while (left>0){
             str=(left%2)+str;
             left/=2;
+        }
+        for(int i=1; i<=5; i++){
+            right*=2;
+            str+=(int)(right/1);
+            right=right%1;
         }
         return str;
     }
     
     void sum(){
         String sum=bin_to_dec(n1)+bin_to_dec(n2);
-        System.out.println("Sum in binary number system"+sum);
-        System.out.println("Sum in decimal number system"+dec_to_bin(sum));
+        System.out.println("Sum in binary number system "+sum);
+        System.out.println("Sum in decimal number system "+dec_to_bin(sum));
     }
     
     public static void main(String agrs[]) throws IOException{
