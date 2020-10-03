@@ -45,9 +45,9 @@ class Binary{
             str=(left%2)+str;
             left/=2;
         }
-        return "";
+        return str;
     }
-  
+    
     void sum(){
         String sum=bin_to_dec(n1)+bin_to_dec(n2);
         System.out.println("Sum in binary number system"+sum);
