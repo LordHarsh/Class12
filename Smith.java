@@ -1,4 +1,5 @@
 // Project Work
+// progess
 import java.io.*;
 class Smith{
     int n;

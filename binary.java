@@ -1,4 +1,5 @@
 // Project Work
+//progess
 import java.io.*;
 class Binary{
     String n1,n2;
@@ -47,7 +48,11 @@ class Binary{
         return "";
     }
   
-    void sum(){}
+    void sum(){
+        String sum=bin_to_dec(n1)+bin_to_dec(n2);
+        System.out.println("Sum in binary number system"+sum);
+        System.out.println("Sum in decimal number system"+dec_to_bin(sum));
+    }
     
     public static void main(String agrs[]) throws IOException{
         Binary obj=new Binary();
