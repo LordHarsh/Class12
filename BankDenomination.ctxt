@@ -2,6 +2,10 @@
 comment0.target=BankDenomination
 comment1.params=num
 comment1.target=void\ solve(int)
-comment2.params=agrs
-comment2.target=void\ main(java.lang.String[])
-numComments=3
+comment2.params=n
+comment2.target=java.lang.String\ ones(int)
+comment3.params=num
+comment3.target=java.lang.String\ calcLetters(int)
+comment4.params=agrs
+comment4.target=void\ main(java.lang.String[])
+numComments=5

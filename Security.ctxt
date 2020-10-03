@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=Security
+comment1.params=ll\ ss
+comment1.target=Security(int,\ java.lang.String)
+comment2.params=
+comment2.target=boolean\ checkLength()
+comment3.params=
+comment3.target=boolean\ checkUpperCase()
+comment4.params=
+comment4.target=boolean\ checkRepitition()
+comment5.params=
+comment5.target=boolean\ checkAlternate()
+comment6.params=agrs
+comment6.target=void\ main(java.lang.String[])
+numComments=7

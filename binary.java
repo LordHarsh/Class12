@@ -1,51 +1,61 @@
-import java.util.*;
-class binary{
-    int a[];
-    int n, l, u;
-    Scanner sc=new Scanner (System.in);
-    binary(int nn){
-        n=nn;
-        a=new int[n];
-        u=0;
-        u=n-1;
-    }
-
-    void readdata(){
-        for(int i=0; i<n; i++)
-        {
-            System.out.println("Enter the number");
-            a[i]=sc.nextInt();
-        }
-    }
-
-    int binary_search(int v){
-        int m=(l+u)/2;
-        if(a[m]<v)
-            l=m+1;
-        if(a[m]>v)
-            u=m-1;
-        if(a[m]==v)
-            return m;
-        if(l>u)
-        return -1;
-        return(binary_search(v));
+// Project Work
+import java.io.*;
+class Binary{
+    String n1,n2;
+    Binary(){
+        n1=n2="";
     }
     
-    void display(){
-        System.out.println("Enter the value to be searched");
-        int val=sc.nextInt();
-        int fou=binary_search(val);
-        if(fou==-1)
-        System.out.println("Not Found");
-        else
-        System.out.println("Found at"+fou);
+    void input() throws IOException{
+        BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+        System.out.print("Enter first binary number-\t");
+        n1=br.readLine();
+        System.out.print("Enter second binary number-\t");
+        n1=br.readLine();
     }
-    public static void main(String agrs[]) {
-        Scanner sc=new Scanner (System.in);
-        System.out.println("Enter number of elements");
-        int nn=sc.nextInt();
-        binary obj=new binary(nn);
-        obj.readdata();
-        obj.display();
+    
+    int check(String s){
+        for(int i=0; i<s.length(); i++)
+            if(!(s.charAt(i)=='0' || s.charAt(i)=='1'))
+                return 0;
+         return 1;
+    }
+    
+    String bin_to_dec(String h){
+        int decimal=h.indexOf('.');
+        int len=h.length();
+        double sum=0;
+        for(int i=0; i<decimal ;i++){
+            sum+=(h.charAt(i)-48)*Math.pow(2,decimal-i-1);
+        }
+        for(int i=decimal+1; i<h.length(); i++){
+            sum+=(h.charAt(i)-48)*Math.pow(2,-(i-decimal));
+        }
+        return sum+"";
+    }
+    
+    String dec_to_bin(String h){
+        int decimal=h.indexOf('.');
+        int len=h.length();
+        int left=Integer.parseInt(h.substring(0,decimal));
+        int rignt=Integer.parseInt(h.substring(0,decimal));
+        String str="";
+        while (left>0){
+            str=(left%2)+str;
+            left/=2;
+        }
+        return "";
+    }
+  
+    void sum(){}
+    
+    public static void main(String agrs[]) throws IOException{
+        Binary obj=new Binary();
+        obj.input();
+        if(obj.check(obj.n1)==0 || obj.check(obj.n2)==0){
+            System.out.println("Invalid Input");
+            return;
+        }
+        obj.sum();
     }
 }

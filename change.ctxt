@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=change
+comment1.params=
+comment1.target=change()
+comment2.params=
+comment2.target=void\ input()
+comment3.params=num
+comment3.target=void\ hexadecimal(int)
+comment4.params=
+comment4.target=void\ decihexa()
+numComments=5

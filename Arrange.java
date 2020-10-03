@@ -11,7 +11,7 @@ class Arrange {
     void input() {
         Scanner sc=new Scanner(System.in);
         for(int i=0; i<size; i++){
-            System.out.println("Enter the number");
+            System.out.print("Enter the number\t");
             this.arr[i]=sc.nextInt();
         }
     }
@@ -35,6 +35,7 @@ class Arrange {
         for(int i=0; i<size; i++){
             System.out.print(arr[i]+", ");
         }
+        System.out.println();
     }
 
     public static void main(String agrs[]) {

@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=countParagraph
+comment1.params=num
+comment1.target=countParagraph(int)
+comment2.params=
+comment2.target=void\ input()
+comment3.params=
+comment3.target=int\ countSentences()
+comment4.params=
+comment4.target=java.lang.String[]\ spliting()
+comment5.params=arrayofwords
+comment5.target=int[]\ countFrequency(java.lang.String[])
+comment6.params=arrayWords\ arrayFreq
+comment6.target=void\ sortPrint(java.lang.String[],\ int[])
+comment7.params=agrs
+comment7.target=void\ main(java.lang.String[])
+numComments=8

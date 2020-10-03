@@ -41,9 +41,9 @@ class point {
     void result() {
         for (int i=0; i<A.length; i++){
             if(check_pseudo(A[i])==1)
-                System.out.printf("Row %d is Pseudo\n",(i+1));
+                System.out.printf("Row %d \u2192 Pseudo\n",(i+1));
             else
-                System.out.printf("Row %d is not Pseudo\n",(i+1));
+                System.out.printf("Row %d \u2192 not Pseudo\n",(i+1));
         }
     }
 

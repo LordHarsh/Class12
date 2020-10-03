@@ -16,13 +16,12 @@ class MatrixRowColumn
         for(int i=0; i<m; i++)
             for(int j=0; j<n; j++)
             {
-                System.out.println("Enter the number");
+                System.out.print("Enter the number\t");
                 this.A[i][j]=sc.nextInt();
             }
     }
 
-    void display()
-    {
+    void display() {
         for(int i=0; i<m; i++)
         {
             for(int j=0; j<n; j++)
@@ -31,14 +30,11 @@ class MatrixRowColumn
         }
     }
 
-    void max()
-    {
+    void max() {
         int maxrow=0;
         int maxcol=0;
-        for(int i=0; i<m; i++)
-        {
-            for(int j=0; j<n; j++)
-            {
+        for(int i=0; i<m; i++) {
+            for(int j=0; j<n; j++) {
                 if(A[i][j]>A[maxrow][maxcol])
                 {
                     maxrow=i;
@@ -50,16 +46,12 @@ class MatrixRowColumn
         ,A[maxrow][maxcol],maxrow,maxcol);
     }
 
-    void min()
-    {
+    void min() {
         int minrow=0;
         int mincol=0;
-        for(int i=0; i<m; i++)
-        {
-            for(int j=0; j<n; j++)
-            {
-                if(A[i][j]<A[minrow][mincol])
-                {
+        for(int i=0; i<m; i++) {
+            for(int j=0; j<n; j++) {
+                if(A[i][j]<A[minrow][mincol]) {
                     minrow=i;
                     mincol=j;
                 }
@@ -69,22 +61,16 @@ class MatrixRowColumn
         ,A[minrow][mincol],minrow,mincol);
     }
 
-    void sort()
-    {   
-        for(int i=0;i<m;i++)
-        {
-            for(int j=0; j<n; j++)
-            {
+    void sort() {
+        for(int i=0;i<m;i++) {
+            for(int j=0; j<n; j++) {
                 int rowpos=i;
                 int colpos=j;
-                for(int k=i;k<m; k++)
-                {
-                    for(int l=0; l<n; l++)
-                    {
+                for(int k=i;k<m; k++) {
+                    for(int l=0; l<n; l++) {
                         if(i==k && l==0)
                             l=j;
-                        if(A[rowpos][colpos]>A[k][l])
-                        {
+                        if(A[rowpos][colpos]>A[k][l]) {
                             rowpos=k;
                             colpos=l;
                         }
@@ -97,8 +83,7 @@ class MatrixRowColumn
         }
     }
 
-    public static void main(String agrs[])
-    {
+    public static void main(String agrs[]) {
         Scanner sc=new Scanner(System.in);
         System.out.print("Enter the number of rows- ");
         int row=sc.nextInt();
@@ -106,7 +91,7 @@ class MatrixRowColumn
         int col=sc.nextInt();
         MatrixRowColumn obj=new MatrixRowColumn(row, col);
         obj.fillMat();
-        System.out.println("Orignal Matrix-");
+        System.out.println("\nOrignal Matrix-");
         obj.display();
         obj.max();
         obj.min();

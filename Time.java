@@ -1,16 +1,17 @@
 //Project Work
 import java.util.*;
+import java.text.*;
 class Time
 {
     String ones(int n) {
         String a[]={""," one"," two"," three"," four"," five"
-            ," six"," seven"," eight","nine"};
+            ," six"," seven"," eight"," nine"};
         return a[n];
     }
 
     String elevens(int n) {
         String a[]={" ten"," eleven"," twelve"," thirteen"," fourteen"," fifteen"
-            ," sixteen"," seventeen"," eighteen","ninteen"};
+            ," sixteen"," seventeen"," eighteen"," ninteen"};
         return a[n];
     }
 
@@ -36,21 +37,28 @@ class Time
                 h-=12;
             if(m==0)
                 return(calc(h)+"'O clock");
-            if(m<=30)
+            if(m==15) 
+                return("quater past"+calc(h));
+            if(m<=30) 
                 return(calc(m)+" minutes past"+calc(h));
+            if(m==45)
+                return("quater to"+calc(h+1));
             if(m>30)
                 return(calc(60-m)+" minutes to"+calc(h+1));
         }
         return "invalid input";
     }
-    
-    public static void main(String agrs[]){
+
+    public static void main(String agrs[]) throws ParseException{
         Scanner sc=new Scanner (System.in);
         System.out.println("Enter hours");
         int hrs=sc.nextInt();
         System.out.println("Enter minutes");
         int min=sc.nextInt();
         Time obj=new Time();
+        SimpleDateFormat printTime=new SimpleDateFormat("HH:mm");
+        String str=Integer.toString(hrs)+":"+Integer.toString(min);
+        System.out.print(printTime.format(printTime.parse(str))+" ");
         System.out.println((obj.time(hrs, min)).trim());
     }
 }

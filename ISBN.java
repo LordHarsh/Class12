@@ -1,3 +1,4 @@
+// Project Work
 import java.io.*;
 class ISBN
 {
@@ -28,7 +29,7 @@ class ISBN
         {
             output+=(10-i)*arr[i];
         }
-        System.out.println(output);
+        System.out.printf("Sum=%d\n",output);
         if(output%11==0)
         return true;
         else 
@@ -38,6 +39,9 @@ class ISBN
     {
         ISBN obj=new ISBN();
         obj.input();
-        System.out.println(obj.calculate()+" that it's a valid ISBN code");
+        if(obj.calculate())
+            System.out.println("Leaves no remainder – valid ISBN");
+        else
+            System.out.println("Leaves remainder – invalid ISBN");
     }
 }

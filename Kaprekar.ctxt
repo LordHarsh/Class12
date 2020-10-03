@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=Kaprekar
+comment1.params=
+comment1.target=Kaprekar()
+comment2.params=
+comment2.target=void\ input()
+comment3.params=
+comment3.target=void\ swap()
+comment4.params=n
+comment4.target=int\ square(int)
+comment5.params=n
+comment5.target=int\ check(int)
+comment6.params=
+comment6.target=void\ display()
+comment7.params=agrs
+comment7.target=void\ main(java.lang.String[])
+numComments=8

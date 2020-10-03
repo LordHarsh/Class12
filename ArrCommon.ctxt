@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=ArrCommon
+comment1.params=nn
+comment1.target=ArrCommon(int)
+comment2.params=
+comment2.target=void\ readdata()
+comment3.params=B
+comment3.target=void\ Common(ArrCommon)
+comment4.params=agrs
+comment4.target=void\ main(java.lang.String[])
+numComments=5

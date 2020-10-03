@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Subtractor12
+comment1.params=
+comment1.target=Subtractor12()
+comment2.params=
+comment2.target=void\ readtime()
+comment3.params=X\ Y
+comment3.target=void\ difftime(Subtractor12,\ Subtractor12)
+comment4.params=
+comment4.target=void\ display()
+comment5.params=agrs
+comment5.target=void\ main(java.lang.String[])
+numComments=6

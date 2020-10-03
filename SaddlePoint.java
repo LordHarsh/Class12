@@ -9,9 +9,10 @@ class SaddlePoint {
         for(int i=0; i<rowSize; i++)
             for(int j=0; j<colSize; j++)
             {
-                System.out.println("Enter the number");
+                System.out.print("Enter the number-\t");
                 this.arr[i][j]=sc.nextInt();
             }
+        System.out.println();
     }
 
     void display_mat()

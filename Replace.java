@@ -26,7 +26,7 @@ class Replace {
         int len=substr.length();
         int count=0;
         for(int i=0; i<=str.length()-len; i++)
-            if(str.substring(i,i+len).compareTo(substr)==0)
+            if(str.substring(i,i+len).equalsIgnoreCase(substr))
                 count++;
         return count;
     }

@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Pallin
+comment1.params=
+comment1.target=Pallin()
+comment2.params=
+comment2.target=void\ accept()
+comment3.params=y
+comment3.target=int\ reverse(int)
+comment4.params=
+comment4.target=void\ check()
+comment5.params=agrs
+comment5.target=void\ main(java.lang.String[])
+numComments=6
