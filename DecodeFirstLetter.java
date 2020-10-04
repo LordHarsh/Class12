@@ -1,5 +1,4 @@
 // Project work
-// Progress
 import java.io.*;
 class DecodeFirstLetter{        //constructors
     String str[];
