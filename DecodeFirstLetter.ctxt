@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=DecodeFirstLetter
+comment1.params=ss
+comment1.target=DecodeFirstLetter(java.lang.String)
+comment2.params=
+comment2.target=void\ edit()
+comment3.params=
+comment3.target=void\ print()
+comment4.params=agrs
+comment4.target=void\ main(java.lang.String[])
+numComments=5

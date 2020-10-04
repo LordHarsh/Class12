@@ -1,5 +1,4 @@
 // Project Work
-// Progress
 import java.io.*;
 class Encryption{
     String str[];
