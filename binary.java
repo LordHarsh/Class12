@@ -1,27 +1,26 @@
 // Project Work
-//progess
 import java.io.*;
 class Binary{
     String n1,n2;
     Binary(){
         n1=n2="";
     }
-    
+
     void input() throws IOException{
         BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
         System.out.print("Enter first binary number-\t");
         n1=br.readLine();
         System.out.print("Enter second binary number-\t");
-        n1=br.readLine();
+        n2=br.readLine();
     }
-    
+
     int check(String s){
         for(int i=0; i<s.length(); i++)
             if(!(s.charAt(i)=='0' || s.charAt(i)=='1' || s.charAt(i)=='.'))
                 return 0;
-         return 1;
+        return 1;
     }
-    
+
     String bin_to_dec(String h){        //converting binary
         int decimal=h.indexOf('.');
         int len=h.length();
@@ -34,17 +33,18 @@ class Binary{
         }
         return sum+"";
     }
-    
+
     String dec_to_bin(String h){
         int decimal=h.indexOf('.');
         int len=h.length();
         int left=Integer.parseInt(h.substring(0,decimal));
-        double right=Integer.parseInt(h.substring(decimal+1,len))/Math.pow(10, len-decimal);
+        double right=Integer.parseInt(h.substring(decimal+1,len))/Math.pow(10, len-decimal-1);
         String str="";
         while (left>0){
             str=(left%2)+str;
             left/=2;
         }
+        str+=".";
         for(int i=1; i<=5; i++){
             right*=2;
             str+=(int)(right/1);
@@ -52,13 +52,13 @@ class Binary{
         }
         return str;
     }
-    
+
     void sum(){
-        String sum=bin_to_dec(n1)+bin_to_dec(n2);
-        System.out.println("Sum in binary number system "+sum);
-        System.out.println("Sum in decimal number system "+dec_to_bin(sum));
+        Float sum=Float.parseFloat(bin_to_dec(n1))+Float.parseFloat(bin_to_dec(n2));
+        System.out.println("Sum in binary number system is "+dec_to_bin(sum+""));
+        System.out.println("Sum in decimal number system is "+sum);
     }
-    
+
     public static void main(String agrs[]) throws IOException{
         Binary obj=new Binary();
         obj.input();

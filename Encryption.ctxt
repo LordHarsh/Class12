@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=Encryption
+comment1.params=ss
+comment1.target=Encryption(java.lang.String)
+comment2.params=ss
+comment2.target=int\ codeWord(java.lang.String)
+comment3.params=
+comment3.target=void\ codeSentence()
+comment4.params=
+comment4.target=void\ arrange()
+comment5.params=
+comment5.target=void\ print()
+comment6.params=agrs
+comment6.target=void\ main(java.lang.String[])
+numComments=7
