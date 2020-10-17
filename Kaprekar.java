@@ -5,7 +5,7 @@ class Kaprekar{
     Kaprekar(){
         p=q=count=0;
     }
-
+    
     void input() throws IOException{
         BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
         System.out.print("Enter the start value\t");
@@ -13,7 +13,7 @@ class Kaprekar{
         System.out.print("Enter the end value\t");
         q=Integer.parseInt(br.readLine());
     }
-
+    
     void swap(){
         if(p>q){
             int temp=p;
@@ -21,11 +21,11 @@ class Kaprekar{
             q=temp;
         }
     }
-
+    
     int square(int n){
         return (n*n);
     }
-
+    
     int check(int n){
         int d=Integer.toString(n).length();     //number of digit in that number
         int num=square(n);
@@ -38,7 +38,7 @@ class Kaprekar{
         }
         return 0;
     }
-
+    
     void display(){
         System.out.println("THE KAPREKAR NUMBERS ARE:");
         for(int i=p; i<=q; i++)
@@ -46,7 +46,7 @@ class Kaprekar{
                 System.out.print(i+",");
         System.out.printf("\nFREQUENCY OF KAPREKAR NUMBERS IS :%d",count);
     }
-
+    
     public static void main(String agrs[]) throws IOException{
         Kaprekar obj=new Kaprekar();
         obj.input();

@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=Smith
+comment1.params=nn
+comment1.target=Smith(int)
+comment2.params=p
+comment2.target=int\ sum(int)
+numComments=3
