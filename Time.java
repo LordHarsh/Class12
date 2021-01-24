@@ -1,4 +1,3 @@
-//Project Work
 import java.util.*;
 import java.text.*;
 class Time
@@ -61,4 +60,4 @@ class Time
         System.out.print(printTime.format(printTime.parse(str))+" ");
         System.out.println((obj.time(hrs, min)).trim());
     }
-}
+} 

@@ -3,12 +3,12 @@ import java.io.*;
 class Encryption{
     String str[];
     int CodeArray[];
-    Encryption(String ss){
-        
+    Encryption(String ss){  //Parameterized constructor
         str=ss.split(" ");
         CodeArray=new int[str.length];
     }
     
+    //converting each word
     int codeWord(String ss){
         int sum=0;
         for(int i=0; i<ss.length(); i++){
@@ -17,13 +17,14 @@ class Encryption{
         return sum;
     }
     
+    //converting the complete sentence
     void codeSentence(){
         for(int i=0; i<str.length; i++){
             CodeArray[i]=codeWord(str[i]);
         }
     }
     
-    void arrange(){
+    void arrange(){ //arranging the words
         for(int i=0; i<CodeArray.length-1; i++){
             int temp=i;
             for(int j=i+1; j<CodeArray.length; j++){
@@ -39,11 +40,12 @@ class Encryption{
         }
     }
     
-    void print(){
+    void print(){   //output
         for(String ss: str)
             System.out.print(ss+" ");
     }
     
+    // main method
     public static void main(String agrs[]) throws IOException{
         BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
         System.out.print("Enter a sentence-\t");

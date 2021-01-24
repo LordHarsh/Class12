@@ -6,7 +6,7 @@ class Binary{
         n1=n2="";
     }
 
-    void input() throws IOException{
+    void input() throws IOException{ // Getting the input from the user
         BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
         System.out.print("Enter first binary number-\t");
         n1=br.readLine();
@@ -14,7 +14,7 @@ class Binary{
         n2=br.readLine();
     }
 
-    int check(String s){
+    int check(String s){    //Checking if it's binary
         for(int i=0; i<s.length(); i++)
             if(!(s.charAt(i)=='0' || s.charAt(i)=='1' || s.charAt(i)=='.'))
                 return 0;
@@ -34,7 +34,7 @@ class Binary{
         return sum+"";
     }
 
-    String dec_to_bin(String h){
+    String dec_to_bin(String h){    //converting decimal
         int decimal=h.indexOf('.');
         int len=h.length();
         int left=Integer.parseInt(h.substring(0,decimal));
@@ -53,12 +53,13 @@ class Binary{
         return str;
     }
 
-    void sum(){
+    void sum(){ // adding
         Float sum=Float.parseFloat(bin_to_dec(n1))+Float.parseFloat(bin_to_dec(n2));
         System.out.println("Sum in binary number system is "+dec_to_bin(sum+""));
         System.out.println("Sum in decimal number system is "+sum);
     }
-
+    
+    // main method
     public static void main(String agrs[]) throws IOException{
         Binary obj=new Binary();
         obj.input();

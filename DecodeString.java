@@ -2,11 +2,11 @@
 import java.io.*;
 class DecodeString{
     String str;
-    DecodeString(String ss){
+    DecodeString(String ss){    // Parameterized Constructor
         str=ss;
     }
     
-    int decode(){
+    int decode(){ // Decoding the String
         int sum=0;
         for(int i=0; i<str.length(); i++){
             int temp=str.charAt(i)-64;
@@ -20,7 +20,8 @@ class DecodeString{
         return sum;
     }
     
-    public static  void main(String agrs[]) throws IOException{
+    //main method
+    public static  void main(String agrs[]) throws IOException{ 
         BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
         System.out.print("Enter the string-\t");
         String tem=br.readLine();

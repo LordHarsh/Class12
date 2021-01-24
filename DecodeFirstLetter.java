@@ -12,7 +12,7 @@ class DecodeFirstLetter{        //constructors
         }
     }
     
-    void print(){
+    void print(){   //output
         boolean checkSomethingPrinted;
         for(int i=1;;i++){      //controling letter to be printed
             checkSomethingPrinted= false;

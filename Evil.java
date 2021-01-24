@@ -2,11 +2,12 @@
 import java.util.*;
 class Evil{
     int num;
-    Evil(int n){
+    Evil(int n){    // Parameterized constructor
         num=n;
     }
     
-    int decimalToBinary(){
+    // converting the decimal to binary
+    int decimalToBinary(){ 
         int temp=this.num;
         String str="";
         while (temp>0){
@@ -21,6 +22,7 @@ class Evil{
         return count;
     }
     
+    // main method
     public static void main(String agrs[]){
         Scanner sc=new Scanner (System.in);
         System.out.println("Enter the number");
@@ -29,8 +31,8 @@ class Evil{
         int c=obj.decimalToBinary();
         System.out.printf("Number of 1's:\t%d\n",c);
         if(c%2==0)
-            System.out.printf("%d is an Evil number", obj.num);
+            System.out.printf("%d is an Evil number\n", obj.num);
         else
-            System.out.printf("%d is not an Evil number", obj.num);
+            System.out.printf("%d is not an Evil number\n", obj.num);
     }
 }
